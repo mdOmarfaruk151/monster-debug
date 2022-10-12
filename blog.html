@@ -48,14 +48,54 @@
                 <td>Session storage is only valid for one tab, you would use it when you want to store data that should not be accessible from other tabs.</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">4</th>
                 <td>For example, if you have a user setting you want to preserve, such as the “remember me” toggle.</td>
                 <td>For example, if you have a ticket purchasing flow on your website, you would want to use session storage so that the user can only purchase one ticket per tab, and the two separate ticket purchasing tabs do not interfere with each other.</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">5</th>
                 <td>Use local storage when you want to share data between tabs or windows. So, if you have a shopping cart on your website and you want the user to be able to access their cart from any tab, you would need to use local storage.</td>
                 <td>Session storage is a good candidate for temporary data that you want to store to improve the user experience or performance of your website.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div>
+          <h3 class="text-center">
+            2. Difference Between Global Scope and Block Scope ?
+           </h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Global Scope</th>
+                <th scope="col">Block Scope</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Global variables last as long as the application is running.</td>
+                <td>Block statements don't create a new scope and the block scope does not apply to var keyword.</td>
+                
+              </tr>
+              <tr >
+                <th scope="row">2</th>
+                <td>A variable declared as global lives throughout run-time. It is accessible and alterable in any scope as the global scope is a parent to all scopes in the execution.
+                  <img class="img-fluid mt-2" src="Global Scope.png" alt="">
+                </td>
+                <td>Block scope is just a block of code. Block are executed immediately, as opposed to functions that have to be called. Blocks in Javascript would include if-statements, loops etc. Prior to ECMAScript 6 (ES6/ES2015) Javascript had no block scopes. A block prior to this would have worked as follows.
+                  <img class="img-fluid mt-2" src="Block scope.png" alt="">
+                </td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td> In a browser environment, the global scope is controlled by the window object while in Node.js, it is controlled by the global object.</td>
+                <td>Block scopes are what you get when you use if statements, for statements, and the like. You can also use them stand-alone with a simple begin-end curly braces {}, not to be confused with empty object literals.</td>
+                
               </tr>
             </tbody>
           </table>
