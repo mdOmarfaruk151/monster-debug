@@ -22,7 +22,7 @@
     </header>
     <hr class="container border border-secondary border-2 opacity-50 mb-4" />
     <main>
-      <section class="container">
+      <section class="container mb-5">
         <div class="border border-success rounded-2 mb-3">
           <h3 class="text-center mt-3 bg-secondary p-4 text-white">
             1. Difference Between Local Storage And Session Storage ?
@@ -31,74 +31,94 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Local Storage</th>
-                <th scope="col">Session Storage</th>
+                <th scope="col"><h4>No.</h4></th>
+                <th scope="col"><h4>Local Storage</h4></th>
+                <th scope="col"><h4>Session Storage</h4></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th scope="row"><h5>1</h5></th>
                 <td>
-                  Their main difference is that local storage data does not
-                  expire.
+                  <h5>
+                    Their main difference is that local storage data does not
+                    expire.
+                  </h5>
                 </td>
                 <td>
-                  Session storage data gets cleared when the user closes its
-                  browser window.
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>
-                  Local storage is not session-based, all the data must be
-                  deleted via javascript or manually.
-                </td>
-                <td>
-                  Page sessions are valid for only one tab at a time. So, if a
-                  user has three tabs open, each one will have its own page
-                  session.
+                  <h5>
+                    Session storage data gets cleared when the user closes its
+                    browser window.
+                  </h5>
                 </td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row"><h5>2</h5></th>
                 <td>
-                  local storage exists until explicitly deleted, you can use it
-                  for data you want to store long term, even after the user has
-                  closed the tab or browser.
+                  <h5>
+                    Local storage is not session-based, all the data must be
+                    deleted via javascript or manually.
+                  </h5>
                 </td>
                 <td>
-                  Session storage is only valid for one tab, you would use it
-                  when you want to store data that should not be accessible from
-                  other tabs.
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>
-                  For example, if you have a user setting you want to preserve,
-                  such as the “remember me” toggle.
-                </td>
-                <td>
-                  For example, if you have a ticket purchasing flow on your
-                  website, you would want to use session storage so that the
-                  user can only purchase one ticket per tab, and the two
-                  separate ticket purchasing tabs do not interfere with each
-                  other.
+                  <h5>
+                    Page sessions are valid for only one tab at a time. So, if a
+                    user has three tabs open, each one will have its own page
+                    session.
+                  </h5>
                 </td>
               </tr>
               <tr>
-                <th scope="row">5</th>
+                <th scope="row"><h5>3</h5></th>
                 <td>
-                  Use local storage when you want to share data between tabs or
-                  windows. So, if you have a shopping cart on your website and
-                  you want the user to be able to access their cart from any
-                  tab, you would need to use local storage.
+                  <h5>
+                    local storage exists until explicitly deleted, you can use
+                    it for data you want to store long term, even after the user
+                    has closed the tab or browser.
+                  </h5>
                 </td>
                 <td>
-                  Session storage is a good candidate for temporary data that
-                  you want to store to improve the user experience or
-                  performance of your website.
+                  <h5>
+                    Session storage is only valid for one tab, you would use it
+                    when you want to store data that should not be accessible
+                    from other tabs.
+                  </h5>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><h5>4</h5></th>
+                <td>
+                  <h5>
+                    For example, if you have a user setting you want to
+                    preserve, such as the “remember me” toggle.
+                  </h5>
+                </td>
+                <td>
+                  <h5>
+                    For example, if you have a ticket purchasing flow on your
+                    website, you would want to use session storage so that the
+                    user can only purchase one ticket per tab, and the two
+                    separate ticket purchasing tabs do not interfere with each
+                    other.
+                  </h5>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><h5>5</h5></th>
+                <td>
+                  <h5>
+                    Use local storage when you want to share data between tabs
+                    or windows. So, if you have a shopping cart on your website
+                    and you want the user to be able to access their cart from
+                    any tab, you would need to use local storage.
+                  </h5>
+                </td>
+                <td>
+                  <h5>
+                    Session storage is a good candidate for temporary data that
+                    you want to store to improve the user experience or
+                    performance of your website.
+                  </h5>
                 </td>
               </tr>
             </tbody>
@@ -113,51 +133,63 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Global Scope</th>
-                <th scope="col">Block Scope</th>
+                <th scope="col"><h4>No.</h4></th>
+                <th scope="col"><h4>Global Scope</h4></th>
+                <th scope="col"><h4>Block Scope</h4></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th scope="row"><h5>1</h5></th>
                 <td>
-                  Global variables last as long as the application is running.
+                  <h5>
+                    Global variables last as long as the application is running.
+                  </h5>
                 </td>
                 <td>
-                  Block statements don't create a new scope and the block scope
-                  does not apply to var keyword.
+                  <h5>
+                    Block statements don't create a new scope and the block
+                    scope does not apply to var keyword.
+                  </h5>
                 </td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th scope="row"><h5>2</h5></th>
                 <td>
-                  A variable declared as global lives throughout run-time. It is
-                  accessible and alterable in any scope as the global scope is a
-                  parent to all scopes in the execution.
+                  <h5>
+                    A variable declared as global lives throughout run-time. It
+                    is accessible and alterable in any scope as the global scope
+                    is a parent to all scopes in the execution.
+                  </h5>
                   <img class="img-fluid mt-2" src="Global Scope.png" alt="" />
                 </td>
                 <td>
-                  Block scope is just a block of code. Block are executed
-                  immediately, as opposed to functions that have to be called.
-                  Blocks in Javascript would include if-statements, loops etc.
-                  Prior to ECMAScript 6 (ES6/ES2015) Javascript had no block
-                  scopes. A block prior to this would have worked as follows.
+                  <h5>
+                    Block scope is just a block of code. Block are executed
+                    immediately, as opposed to functions that have to be called.
+                    Blocks in Javascript would include if-statements, loops etc.
+                    Prior to ECMAScript 6 (ES6/ES2015) Javascript had no block
+                    scopes. A block prior to this would have worked as follows.
+                  </h5>
                   <img class="img-fluid mt-2" src="Block scope.png" alt="" />
                 </td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row"><h5>3</h5></th>
                 <td>
-                  In a browser environment, the global scope is controlled by
-                  the window object while in Node.js, it is controlled by the
-                  global object.
+                  <h5>
+                    In a browser environment, the global scope is controlled by
+                    the window object while in Node.js, it is controlled by the
+                    global object.
+                  </h5>
                 </td>
                 <td>
-                  Block scopes are what you get when you use if statements, for
-                  statements, and the like. You can also use them stand-alone
-                  with a simple begin-end curly braces {}, not to be confused
-                  with empty object literals.
+                  <h5>
+                    Block scopes are what you get when you use if statements,
+                    for statements, and the like. You can also use them
+                    stand-alone with a simple begin-end curly braces {}, not to
+                    be confused with empty object literals.
+                  </h5>
                 </td>
               </tr>
             </tbody>
@@ -170,7 +202,7 @@
           </h3>
           <hr />
           <img class="rounded mx-auto d-block" src="even loop.jpeg" alt="" />
-          <p class="mt-3 mx-5 my-5">
+          <h5 class="mt-3 mx-5 my-5">
             The event loop utilizes three major components, Call Stack, Event
             Queue, and WebAPIs/C++ APIs. It manages function calls in a way that
             asynchronous events would go into the event queue and will be called
@@ -194,7 +226,74 @@
             then add asynchronous calls into the call stack. This simple
             architectural approach is what allows javascript to handle way more
             requests than the traditional multi-threaded synchronous approach.
-          </p>
+          </h5>
+        </div>
+
+        <div class="border border-success rounded-2 mb-3">
+          <h2 class="text-center mt-3 bg-secondary p-4 text-white">
+            4. How Many Ways We Get Undefined ?
+          </h2>
+          <hr />
+          <h5 class="mt-3 mx-5 my-5">
+            1. An undefined variable or anything without a value will always
+            return "undefined" in JavaScript.
+
+            <hr />
+            2. When a variable is declared or initialized but no value is
+            assigned to it, JavaScript automatically displays "undefined".
+
+            <hr />
+            3. When you try accessing values in, for example, an array or object
+            that doesn’t exist, it will throw undefined.
+
+            <hr />
+            4. One of the first methods that comes to mind is direct comparison.
+            This is where you compare the output to see if it returns undefined.
+            <br />
+            <br />
+            let user = { name: "John Doe", age: 14 };
+            <br />
+            <br />
+            if (user.hobby === undefined) {
+            <br />
+
+            console.log("This is undefined"); }
+            <br />
+            <br />
+            This also works for arrays as you can see below:
+            <br />
+            <br />
+            let scores = [12, 34, 66, 78];
+            <br />
+            <br />
+            if (scores[10] === undefined) {
+            <br />
+
+            console.log("This is undefined"); }
+            <br />
+            <hr />
+            5. We can also use the type of the variable to check if it’s
+            undefined. Luckily for us undefined is a datatype for an undefined
+            value as you can see below:
+            <br />
+            <br />
+            let name;
+            <br />
+
+            console.log(typeof name); // "undefined"
+
+            <hr />
+            6. The void operator is often used to obtain the undefined primitive
+            value. You can do this using "void(0)" which is similar to "void 0"
+            as you can see below:
+            <br />
+            <br />
+            console.log(void 0); // undefined
+            <br />
+            <br />
+            console.log(void(0)); // undefined
+            <hr />
+          </h5>
         </div>
       </section>
     </main>
