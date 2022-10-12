@@ -186,6 +186,7 @@ button {
   
 }
 
+
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
@@ -194,4 +195,18 @@ button {
   .card {
     flex-direction: column;
   }
+}
+
+.btn-blogs {
+  text-align: center;
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+
+}
+#blogs{
+  text-decoration: none;
+  color: white;
+  
 }

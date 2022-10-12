@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blogs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <a class="btn btn-primary mt-3" href="index.html" role="button">Home</a>
+    </header>
+    <hr class="container border border-secondary border-2 opacity-50 mb-4" />
+    <main>
+      <section class="container">
+        <div>
+          <h3 class="text-center">
+           1. Difference Between Local Storage and Session Storage ?
+          </h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Local Storage</th>
+                <th scope="col">Session Storage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Their main difference is that local storage data does not expire.</td>
+                <td>Session storage data gets cleared when the user closes its browser window.</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Local storage is not session-based, all the data must be deleted via javascript or manually.</td>
+                <td>Page sessions are valid for only one tab at a time. So, if a user has three tabs open, each one will have its own page session.</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>local storage exists until explicitly deleted, you can use it for data you want to store long term, even after the user has closed the tab or browser.</td>
+                <td>Session storage is only valid for one tab, you would use it when you want to store data that should not be accessible from other tabs.</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>For example, if you have a user setting you want to preserve, such as the “remember me” toggle.</td>
+                <td>For example, if you have a ticket purchasing flow on your website, you would want to use session storage so that the user can only purchase one ticket per tab, and the two separate ticket purchasing tabs do not interfere with each other.</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Use local storage when you want to share data between tabs or windows. So, if you have a shopping cart on your website and you want the user to be able to access their cart from any tab, you would need to use local storage.</td>
+                <td>Session storage is a good candidate for temporary data that you want to store to improve the user experience or performance of your website.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

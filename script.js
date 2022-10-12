@@ -89,7 +89,7 @@ const gameOver = () => {
 
   // restart everything
   startTime = null;
-  errorCount = 0;
+  errorCount = "";
   userText = "";
   display.classList.add("inactive");
 };
@@ -136,5 +136,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime.toFixed(0) ? timeSpent.toFixed(0) : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent.toFixed(0) : 0} seconds`;
 }, 1000);
