@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("./bg.png");
+  background-image: url("bg.png");
   background-size: cover;
   background-position: left top;
   font-family: "Zilla Slab", serif;
@@ -62,9 +62,9 @@ body {
   display: none;
 }
 #result {
-  position: fixed;
-  top: 10%; 
-  left: 10%;
+  position:fixed;
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -74,6 +74,7 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
+  
 }
 #show-time{
   text-align: center;
@@ -95,6 +96,7 @@ body {
 }
 .hidden {
   display: none;
+  
 }
 .title {
   text-align: center;
@@ -179,6 +181,9 @@ button {
   width: 100%;
   position: fixed;
   top: 0;
+  
+  
+  
 }
 
 @media only screen and (max-width: 700px) {
