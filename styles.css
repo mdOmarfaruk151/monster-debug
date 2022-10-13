@@ -32,19 +32,22 @@ body {
   );
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #display {
-  height: 100px;
+  height: 200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   color: white;
   font-size: 32px;
   background-color: #171717;
   border: 2px solid #9dffad;
   border-radius: 15px;
+  
 }
 
 #countdown {
